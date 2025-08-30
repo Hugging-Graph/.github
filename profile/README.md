@@ -1,12 +1,25 @@
-## Hi there 👋
+# 🤗 HuggingGraph
 
-<!--
+**The GitHub for LangGraph workflows** - Share, discover, and compose reusable AI agent graphs.
 
-**Here are some ideas to get you started:**
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![LangGraph Compatible](https://img.shields.io/badge/LangGraph-compatible-green.svg)](https://langchain-ai.github.io/langgraph/)
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## 🚀 Quick Start
+
+```bash
+# Install HuggingGraph CLI
+pip install hugginggraph
+
+# Browse available graphs
+hg search "quiz agent"
+
+# Install a graph
+hg install quiz-agent
+
+# Use in your code
+from hugginggraph import load_graph
+
+quiz_graph = load_graph("quiz-agent")
+result = quiz_graph.invoke({"topic": "Python basics"})
